@@ -7,3 +7,172 @@
 #greeting-container {
   margin-top: 20px;
 }
+h1 {
+    margin-bottom: 5px;
+    font-size: 50px;
+}
+#welcome {
+    color: #FF7F50;
+    margin-top: 1px;
+    font-size: 20px;
+}
+#photo {
+    width: 120px;
+    height: 150px;
+    float: left;
+}
+/*#fireworks {
+    width:35px;
+    height:35px;
+    margin-left: 250px;
+}*/
+.intro {
+    position: relative;
+    border-radius: 12px; 
+}
+#intro {
+    margin-top: 70px;
+    margin-inline: 5px;
+    position: absolute;
+    top: -30px;
+}
+#rec {
+    position: relative; 
+}
+#contact {
+    margin-left: 130px;
+}
+#linkedin {
+    color:#6495ED;
+}
+#github {
+    color:#6495ED;
+}
+#server {
+    position: absolute;
+    top: 730px; 
+    font-size: 18px;   
+}
+#random {
+    position: absolute;
+    top: 650px;
+    font-size: 20px;
+}
+#button {
+    position: absolute;
+    top: 700px;
+    font-size: 18px;
+    color: #4682B4;
+    border-radius: 12px;
+    border: 2px solid #4682B4;
+}
+#greeting-container {
+    position: absolute;
+    top: 700px;
+    left: 600px;
+}
+
+/*design for first paragraph*/
+.hobby {
+    position: relative;
+}
+#label1 {
+    height: 50px;
+    width: 320px;
+    position: relative;
+    top: 10px;
+    left: 310px;
+}
+#para1 {
+    color:white;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    left: 400px;
+}
+.hobbyText {
+    position: relative;
+}
+#volleyball {
+    height: 100px;
+    width: 85px;
+    position: absolute;
+    top: 10px;
+    left: 300px;
+}
+#volleyball1 {
+    height: 100px;
+    width: 85px;
+    position: absolute;
+    top: 10px;
+    left: 200px;
+}
+#food1 {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    left: 480px;
+}
+#food2 {
+    height: 100px;
+    width: 90px;
+    position: absolute;
+    top: 10px;
+    left: 590px;
+}
+#para11 {
+    position: absolute;
+    top: 5px;
+    left: 400px;
+    color: #DB7093;
+}
+#para12 {
+    position: absolute;
+    top: 35px;
+    left: 400px;
+    color: #DB7093;
+}
+#para13 {
+    position: absolute;
+    top: 65px;
+    left: 400px;
+    color: #DB7093;
+}
+
+/*design for second paragraph*/
+.project {
+    position: relative;
+}
+#label2 {
+    height: 50px;
+    width: 320px;
+    position: relative;
+    top: 120px;
+    left: 0px;
+}
+#para2 {
+    color:white;
+    font-weight: bold;
+    position: absolute;
+    top: 125px;
+    left: 100px;
+}
+#para21 {
+    position: absolute;
+    top: 170px;
+    left: 100px;
+    color: #4682B4;
+}
+#para22 {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    color: #4682B4;
+}
+#para23 {
+    position: absolute;
+    top: 230px;
+    left: 100px;
+    color: #4682B4;
+}
