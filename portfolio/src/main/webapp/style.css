@@ -176,3 +176,10 @@ h1 {
     left: 100px;
     color: #4682B4;
 }
+
+/*Blank bottom*/
+#blank {
+    position: relative;
+    top: 400px;
+    height:100px;
+}
