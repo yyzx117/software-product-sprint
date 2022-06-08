@@ -27,3 +27,14 @@ function addRandomGreeting() {
   greetingContainer.innerText = greeting;
 
 }
+
+/**
+ * Adds function to get client and server working together.
+ */
+async function workTogether() {
+    const responseFromServer = await fetch('/date');
+    const textFromResponse = await responseFromServer.text();
+
+    const dateContainer = document.getElementById("getDate");
+    dateContainer.innerText = textFromResponse;
+}

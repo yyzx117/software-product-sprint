@@ -188,13 +188,20 @@ h1 {
 /*Blank bottom*/
 #blank {
     position: relative;
-    top: 400px;
+    top: 700px;
     height:100px;
 }
 
-/*a POST request*/
+/*A POST request*/
 #post {
     position: relative;
-    top: 260px;
+    top: 360px;
+    float: right;
+}
+
+/* A data server*/
+#data {
+    position: relative;
+    top: 600px;
     left: 400px;
 }
