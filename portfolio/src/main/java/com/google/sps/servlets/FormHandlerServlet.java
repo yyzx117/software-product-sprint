@@ -18,7 +18,7 @@ public class FormHandlerServlet extends HttpServlet {
     boolean email = Boolean.parseBoolean(request.getParameter("email"));
 
     // Write the value to the response so the user can see it.
-    response.getWriter().println("Thanks for your submission!");
+    response.getWriter().println("Thanks for your submission!<br>");
 
     if (phone) {
         System.out.println("Your Phone number: " + textValue);
