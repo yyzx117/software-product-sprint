@@ -54,5 +54,25 @@
       
       <div id='blank'></div>
     </div>
+
+    <form action="/form-handler" id='post' method="POST">
+        <p>Enter your contact information here:</p>
+        <textarea name="text-input">Welcome!</textarea>
+        <br/>
+
+        <p>Choose one from the two options:</p>
+        <label>
+            <input type="checkbox" name="phone" value="true">
+            Phone Number
+        </label>
+        <br/>
+        <label>
+            <input type="checkbox" name="email" value="true">
+            Email Address
+        </label>
+        <br/><br/>
+        <input type="submit" />
+      </form>
+
     </body>   
 </html>

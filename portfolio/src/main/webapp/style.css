@@ -4,6 +4,7 @@
   width: 650px;
 }
 
+/*design for greeting section*/
 #greeting-container {
   margin-top: 20px;
 }
@@ -26,6 +27,8 @@ h1 {
     height:35px;
     margin-left: 250px;
 }*/
+
+/*design for intro paragraph*/
 .intro {
     position: relative;
     border-radius: 12px; 
@@ -39,6 +42,8 @@ h1 {
 #rec {
     position: relative; 
 }
+
+/*design for contact information/link*/
 #contact {
     margin-left: 130px;
 }
@@ -48,11 +53,8 @@ h1 {
 #github {
     color:#6495ED;
 }
-#server {
-    position: absolute;
-    top: 730px; 
-    font-size: 18px;   
-}
+
+/* design for random button/texts*/
 #random {
     position: absolute;
     top: 650px;
@@ -71,8 +73,14 @@ h1 {
     top: 700px;
     left: 600px;
 }
+/*design for server code*/
+#server {
+    position: absolute;
+    top: 730px; 
+    font-size: 18px;   
+}
 
-/*design for first paragraph*/
+/*design for hobby paragraph*/
 .hobby {
     position: relative;
 }
@@ -140,7 +148,7 @@ h1 {
     color: #DB7093;
 }
 
-/*design for second paragraph*/
+/*design for project paragraph*/
 .project {
     position: relative;
 }
@@ -182,4 +190,11 @@ h1 {
     position: relative;
     top: 400px;
     height:100px;
+}
+
+/*a POST request*/
+#post {
+    position: relative;
+    top: 260px;
+    left: 400px;
 }
