@@ -8,79 +8,101 @@
   </head>
   <body>
     <div id="content">
-      <img id='photo' src="./images/photo.jpg" />
-      <h1>Zhixuan Yang</h1>
-      <p id='welcome'> Welcome to my Google SPS Portfolio! </p>
-      <!img id='fireworks' src='./images/fireworks.png' />
-      <p id='contact'> <a id='github' href='https://github.com/yyzx117/software-product-sprint.git'> Github <a/> | <a id='linkedin' href='https://www.linkedin.com/in/zhixuan-yang-7a02b61b9/'>Linkedin</a></p>
+        <img id='photo' src="./images/photo.jpg" />
+        <h1>Zhixuan Yang</h1>
+        <p id='welcome'> Welcome to my Google SPS Portfolio! </p>
+        <!img id='fireworks' src='./images/fireworks.png' />
+        <p id='contact'> <a id='github' href='https://github.com/yyzx117/software-product-sprint.git'> Github <a/> | <a id='linkedin' href='https://www.linkedin.com/in/zhixuan-yang-7a02b61b9/'>Linkedin</a></p>
 
-      <div class='intro'>
-        <svg width="850" height="130">
-            <rect id='rec' x='-200' y='20' width='850' height='90' style = 'fill:#E6E6FA'> </rect>
-         </svg>
-        <p id='intro'> Hi! My name is Zhixuan Yang and I am a junior at Georgia Tech 🐝 majoring in Computer Science and minoring in Psychology.
+        <div class='intro'>
+            <p id='intro'> Hi! My name is Zhixuan Yang and I am a junior at Georgia Tech 🐝 majoring in Computer Science and minoring in Psychology.
             Full of passion for tech and life, I aim at becoming a brilliant software engineer who could
             design technical products that help people lead better lives! <p/>
-      </div>
+        </div>
 
-      <div class='hobby'> 
-          <img id='label1' src='./images/label1.jpg' />
-          <p id='para1'> Life and hobbies</p>
-      </div> 
+        <div class='hobby'> 
+            <!img id='label1' src='./images/label1.jpg' />
+            <p id='para1'> Life and hobbies</p>
+            <p id='para11'> Volleyball</p>
+            <p id='para12'> Food </p>
+            <p id='para13'> Singing </p>
+            <p id='random'>Learn about my favourite Singers by clicking the button below:</p>
+            <button id='button' onclick="addRandomGreeting()"> Click me </button>
+            <div id="greeting-container"></div>
+            <div class="slidecontainer">
+            <input type="range" min="0" max="4" value="0" class="slider" id="myRange">
+            </div>
+            <p id='demo'></p>
+            <!figure class="slide">
+                <!img src="./images/volleyball.JPG" alt="Volleyball" height=50px width=50px/>
+            <figcaption> 
+            </figcaption>
+            </figure>
+        </div> 
       
-      <div class='hobbyText'>
-            <p id='para11'> Volleyball</p> 
-            <img id='volleyball'src= './images/volleyball.JPG' />
-            <img id='volleyball1'src= './images/volleyball1.JPG' />
-            <p id='para12'> Singing </p>
-            <p id='para13'> Food </p>
-            <img id='food1'src= './images/food1.jpg' />
-            <img id='food2'src= './images/food2.jpg' />
-      </div>
 
-      <div class='project'>
-          <img id='label2' src='./images/label2.jpg' />
-          <p id='para2'> Project and Experience</p>
-          <p id='para21'>1. BRAINML Lab </p> 
-          <p id='para22'>2. Neusoft Intern </p>
-          <p id='para23'>2. Unihack 21' </p>          
-      </div>
+        <div class='project'>
+            <!img id='label2' src='./images/label2.jpg' />
+            <p id='para2'> Project and Experience</p>
+            <p id='para21'>
+                1. 
+                <a id='project1' href='https://sites.google.com/site/anqiwuresearch/group-members'> BRAINML Lab </a>:  
+            </p>
+            <p id='lab'>
+                Topic in GPFA.
+            </p>
+            <p id='para22'>2. Neusoft Intern: </p>
+            <p id='neusoft'>
+                Learned how to build Docker environment and helped the team set up virtual 
+                environment under Docker. Helped the team transmit SQL databases. 
+                Modified the codes of the project and tested them in the Docker environment I have built.            
+            </p>
+            <p id='para23'>2. Unihack 21': </p>   
+            <p id='unihack'>
+                Developed a COVID-19 isolation communication platform (website) as a group of 4
+                to help connect isolators with isolators, isolators with the staff. 
+                Designed front-end pages with HTML, including home, login, profile page, etc,
+                and the logo for our artifact with PhotoShop.
+            </p>      
+        </div>
+
+        <div id='contactme'>
+            <p id='para3'> Contact Me</p>
+            <form action="/form-handler" id='post' method="POST">
+                <div id='title'>
+                    <p>Enter your contact information here:</p>
+                    <textarea name="text-input">Welcome!</textarea>
+                    <br/>
+            
+                    <p>Choose one from the two options:</p>
+                    <label>
+                        <input type="checkbox" name="phone" value="true">
+                        Phone Number
+                    </label>
+                    <br/>
+                    <label>
+                        <input type="checkbox" name="email" value="true">
+                        Email Address
+                    </label>
+                    <br/><br/>
+                    <input id = 'submit' type="submit" />
+                </div>
+            </form>
+            <div id='data'>
+                <p>Click this button to see the server's current date.</p>
+                <button   id='dataButton' onclick="workTogether();">
+                    Get current date
+                </button>
+                <p id="getDate"></p>
+            </div>
+            <p id='server'>Click <a id='here'href="/hello">here</a> to see content created by server code.</p>
+        </div>
       
-      <p id='random'>Learn about my favourite Singers by clicking the button below:</p>
-      <button id='button' onclick="addRandomGreeting()"> Click me </button>
-      <div id="greeting-container"></div>
-      <p id='server'>Click <a href="/hello">here</a> to see content created by server code.</p>
 
-      <form action="/form-handler" id='post' method="POST">
-        <p>Enter your contact information here:</p>
-        <textarea name="text-input">Welcome!</textarea>
-        <br/>
-
-        <p>Choose one from the two options:</p>
-        <label>
-            <input type="checkbox" name="phone" value="true">
-            Phone Number
-        </label>
-        <br/>
-        <label>
-            <input type="checkbox" name="email" value="true">
-            Email Address
-        </label>
-        <br/><br/>
-        <input type="submit" />
-    </form>
-
-    <div id='data'>
-        <p>Click this button to see the server's current date.</p>
-        <button   id='dataButton' onclick="workTogether();">
-            Get current date
-        </button>
-        <p id="getDate"></p>
-    </div>
 
     <div id='blank'></div>
-    </div>
+</div>
     
 
-    </body>   
+</body>   
 </html>
