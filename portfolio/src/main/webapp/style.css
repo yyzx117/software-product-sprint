@@ -49,6 +49,10 @@ h1 {
     margin-inline: 5px;
     position: absolute;
 }
+#buzz {
+    height:30px;
+    width: 35px;
+}
 
 /*design for contact information/link*/
 #contact {
