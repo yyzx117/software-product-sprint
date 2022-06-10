@@ -68,7 +68,7 @@ h1 {
     border-width: thin;
     border-color: #173e8c;
     top: 70px;
-    height: 380px;
+    height: 470px;
 }
 #para1 {
     font-size: 25px;
@@ -98,16 +98,23 @@ h1 {
     color: #173e8c;
     font-size:18px;
 }
+#para14 {
+    position: absolute;
+    top: 145px;
+    left: 25px;
+    color: #173e8c;
+    font-size:18px;
+}
 /* design for random button/texts*/
 #random {
     position: absolute;
-    top: 305px;
+    top: 395px;
     left: 10px;
     font-size: 17px;
 }
 #button {
     position: absolute;
-    top: 345px;
+    top: 435px;
     left: 10px;
     font-size: 16px;
     color: #4682B4;
@@ -116,11 +123,11 @@ h1 {
 }
 #greeting-container {
     position: absolute;
-    top: 325px;
+    top: 415px;
     left: 130px;
 }
 /*slider design*/
-.slidecontainer {
+/*.slidecontainer {
     position: absolute;
     width:100%;
     top: 277px;
@@ -131,14 +138,99 @@ h1 {
     width: 60%;
 }
 .slider:hover {
-    opacity: 1; /* Fully shown on mouse-over */
+    opacity: 1;
 }
 .slider::-webkit-slider-thumb {
     background-image: url('./images/food1.jpg');
-    /*height: 25px;
-    width: 25px;*/
+    height: 25px;
+    width: 25px;
+}*/
+.slideshow-container {
+    max-width: 400px;
+    position: relative;
+    top: 60px;
+    margin: auto;
 }
-
+.image {
+    position:absolute;
+}
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 170px;
+    /*top:50%;*/
+    width: auto;
+    margin-top: -22px;
+    color: white;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 17px;
+    font-weight:bold;
+    padding: 8px 12px;
+    position: absolute;
+    top: 270px;
+    /*bottom:8px;*/
+    width: 100%;
+    text-align: center;
+}
+/* Number text */
+.numbertext {
+    color: white;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0px;
+}
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.dots {
+    position:relative;
+    top: 370px;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
 
 
 /*design for project paragraph*/
@@ -257,12 +349,4 @@ h1 {
 }
 #here {
     color: #173e8c;
-}
-
-
-/*Blank bottom*/
-#blank {
-    position: relative;
-    top: 700px;
-    height:100px;
 }
