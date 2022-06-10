@@ -53,6 +53,18 @@ h1 {
     height:30px;
     width: 35px;
 }
+#github {
+    height:18px;
+    width:18px;
+}
+#linkedin {
+    height:17px;
+    width:17px;
+}
+#email {
+    height:18px;
+    width: 20px;
+}
 
 /*design for contact information/link*/
 #contact {
@@ -344,6 +356,11 @@ h1 {
 #dataButton{
     position:absolute;
     top: 40px;
+}
+#getDate {
+    position: absolute;
+    top: 25px;
+    left: 150px;
 }
 #server {
     position: absolute;
