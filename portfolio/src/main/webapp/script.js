@@ -55,7 +55,7 @@ function showSlides(n) {
  */
 function addRandomGreeting() {
   const greetings =
-      ['Taylor Swift', 'Avril Lavigne', 'G.E.M 邓紫棋', 'IU', 'AKMU', 'Bichen Zhang'];
+      ['Taylor Swift', 'Avril Lavigne', 'G.E.M 邓紫棋', 'IU', 'AKMU', 'Bichen Zhang', 'Gracie Abrams'];
 
   // Pick a random greeting.
   const greeting = greetings[Math.floor(Math.random() * greetings.length)];
@@ -75,4 +75,18 @@ async function workTogether() {
 
     const dateContainer = document.getElementById("getDate");
     dateContainer.innerText = textFromResponse;
+}
+
+async function getServerStats() {
+    const responseFromServer = await fetch('/server-stats');
+    // The json() function returns an object that contains fields that we can
+    // reference to create HTML.
+    const stats = await responseFromServer.json();
+    const stat = stats[Math.floor(Math.random() * stats.length)];
+
+    const statsListElement = document.getElementById('server-stats-container');
+    statsListElement.innerText = stat;
+
+
+    
 }

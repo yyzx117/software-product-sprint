@@ -54,8 +54,8 @@ h1 {
     width: 35px;
 }
 #github {
-    height:18px;
-    width:18px;
+    height:19px;
+    width:19px;
 }
 #linkedin {
     height:17px;
@@ -312,13 +312,13 @@ h1 {
 
 
 /*design for contact paragraph*/
-#contactme {
+.contactme {
     position:relative;
     top: 150px;
     border-style: solid;
     border-width: thin;
     border-color: #173e8c;
-    height: 450px;
+    height: 520px;
 
 }
 #para3 {
@@ -370,4 +370,26 @@ h1 {
 }
 #here {
     color: #173e8c;
+}
+#city {
+    position:absolute;
+    top:410px;
+    left:50px;
+    font-size:18px;
+}
+#random2 {
+    position:absolute;
+    top:440px;
+    left:50px;
+    font-size:18px;
+}
+#showCity {
+    position:absolute;
+    top:480px;
+    left:50px;
+}
+#server-stats-container {
+    position:absolute;
+    top:465px;
+    left:120px;
 }

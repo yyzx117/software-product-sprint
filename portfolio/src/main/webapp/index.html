@@ -110,7 +110,7 @@
             </p>      
         </div>
 
-        <div id='contactme'>
+        <div class='contactme'>
             <p id='para3'> Contact Me</p>
             <form action="/form-handler" id='post' method="POST">
                 <div id='title'>
@@ -140,6 +140,10 @@
                 <p id="getDate"></p>
             </div>
             <p id='server'>Click <a id='here'href="/hello">here</a> to see content created by server code.</p>
+            <p id='city'>Click <a id='here' href="/server-stats">here</a> to see all the cities I have been to in USA.</p>
+            <p id='random2'>Click this button to see the random city I have been to in USA.</p>
+            <button id='showCity' onclick="getServerStats()">Explore cities</button>
+            <ul id="server-stats-container"></ul>            
         </div>
       
 
