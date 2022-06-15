@@ -1,9 +1,395 @@
+body {
+    /*background-color: #FAF0E6;*/
+    background-image: linear-gradient(to bottom left, #BA55D3, #FFA07A);
+    font-family: 'Times New Roman', Times, serif;
+}
 #content {
   margin-left: auto;
   margin-right: auto;
   width: 650px;
+  background: white;
+  height: 2000px;
 }
 
+/*design for greeting section*/
 #greeting-container {
   margin-top: 20px;
+}
+h1 {
+    margin-bottom: 5px;
+    font-size: 50px;
+}
+#welcome {
+    color: #FF7F50;
+    margin-top: 1px;
+    font-size: 20px;
+}
+#photo {
+    width: 120px;
+    height: 150px;
+    float: left;
+}
+/*#fireworks {
+    width:35px;
+    height:35px;
+    margin-left: 250px;
+}*/
+
+/*design for intro paragraph*/
+.intro {
+    position: relative;
+    top: 30px;
+    border-style: solid;
+    border-width: thin;
+    border-color: #173e8c;
+    background-color: #b0c4de;
+    height: 100px;
+}
+#intro {
+    margin-inline: 5px;
+    position: absolute;
+}
+#buzz {
+    height:30px;
+    width: 35px;
+}
+#github {
+    height:19px;
+    width:19px;
+}
+#linkedin {
+    height:17px;
+    width:17px;
+}
+#email {
+    height:18px;
+    width: 20px;
+}
+
+/*design for contact information/link*/
+#contact {
+    margin-left: 130px;
+}
+#linkedin {
+    color:#6495ED;
+}
+#github {
+    color:#6495ED;
+}
+
+/*design for hobby paragraph*/
+.hobby {
+    position: relative;
+    border-style: solid;
+    border-width: thin;
+    border-color: #173e8c;
+    top: 70px;
+    height: 470px;
+}
+#para1 {
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+}
+#para11 {
+    position: absolute;
+    top: 55px;
+    left: 10px;
+    color: #173e8c;
+    font-size: 18px;
+}
+#para12 {
+    position: absolute;
+    top: 85px;
+    left: 10px;
+    color: #173e8c;
+    font-size:18px;
+}
+#para13 {
+    position: absolute;
+    top: 115px;
+    left: 10px;
+    color: #173e8c;
+    font-size:18px;
+}
+#para14 {
+    position: absolute;
+    top: 145px;
+    left: 25px;
+    color: #173e8c;
+    font-size:18px;
+}
+/* design for random button/texts*/
+#random {
+    position: absolute;
+    top: 395px;
+    left: 10px;
+    font-size: 17px;
+}
+#button {
+    position: absolute;
+    top: 435px;
+    left: 10px;
+    font-size: 16px;
+    color: #4682B4;
+    border-radius: 12px;
+    border: 2px solid #4682B4;
+}
+#greeting-container {
+    position: absolute;
+    top: 415px;
+    left: 130px;
+}
+/*slider design*/
+/*.slidecontainer {
+    position: absolute;
+    width:100%;
+    top: 277px;
+    left: 120px;
+    opacity: 1;
+}
+.slider {
+    width: 60%;
+}
+.slider:hover {
+    opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+    background-image: url('./images/food1.jpg');
+    height: 25px;
+    width: 25px;
+}*/
+.slideshow-container {
+    max-width: 400px;
+    position: relative;
+    top: 60px;
+    margin: auto;
+}
+.image {
+    position:absolute;
+}
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 170px;
+    /*top:50%;*/
+    width: auto;
+    margin-top: -22px;
+    color: white;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 17px;
+    font-weight:bold;
+    padding: 8px 12px;
+    position: absolute;
+    top: 270px;
+    /*bottom:8px;*/
+    width: 100%;
+    text-align: center;
+}
+/* Number text */
+.numbertext {
+    color: white;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0px;
+}
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.dots {
+    position:relative;
+    top: 370px;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+
+/*design for project paragraph*/
+.project {
+    position: relative;
+    top: 110px;
+    border-style: solid;
+    border-width: thin;
+    border-color: #173e8c;
+    height: 360px;
+}
+#para2 {
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+}
+#project1 {
+    color: #173e8c;
+}
+#para21 {
+    position: absolute;
+    top: 60px;
+    left: 50px;
+    color: #173e8c;
+    font-size: 16px;
+}
+#lab {
+    position:absolute;
+    top: 90px;
+    left: 100px;
+    font-size: 15px;
+}
+#para22 {
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    color: #173e8c;
+    font-size: 18px;
+}
+#neusoft {
+    position:absolute;
+    top:150px;
+    left:100px;
+    font-size: 15px;
+    margin-right: 50px;
+}
+#para23 {
+    position: absolute;
+    top: 220px;
+    left: 50px;
+    color: #173e8c;
+    font-size: 18px;
+}
+#unihack {
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    font-size: 15px;
+    margin-right: 50px;
+}
+
+
+/*design for contact paragraph*/
+.contactme {
+    position:relative;
+    top: 150px;
+    border-style: solid;
+    border-width: thin;
+    border-color: #173e8c;
+    height: 520px;
+
+}
+#para3 {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+#post {
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    font-size: 18px;
+    border-style: solid;
+    border-width: thin;
+    height: 250px;
+    width:300px;
+    background-color: #FAF0E6;
+}
+#title {
+    position:relative;
+    left: 20px;
+}
+#submit {
+    position:absolute;
+    top: 190px;
+}
+#data {
+    position: absolute;
+    top: 320px;
+    left: 50px;
+    font-size:18px;
+}
+#dataButton{
+    position:absolute;
+    top: 40px;
+}
+#getDate {
+    position: absolute;
+    top: 25px;
+    left: 150px;
+}
+#server {
+    position: absolute;
+    top: 380px; 
+    font-size: 18px;  
+    left:50px; 
+}
+#here {
+    color: #173e8c;
+}
+#city {
+    position:absolute;
+    top:410px;
+    left:50px;
+    font-size:18px;
+}
+#random2 {
+    position:absolute;
+    top:440px;
+    left:50px;
+    font-size:18px;
+}
+#showCity {
+    position:absolute;
+    top:480px;
+    left:50px;
+}
+#server-stats-container {
+    position:absolute;
+    top:465px;
+    left:120px;
 }

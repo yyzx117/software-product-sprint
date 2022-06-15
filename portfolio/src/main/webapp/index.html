@@ -2,18 +2,153 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Zhixuan Yang</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
   <body>
     <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
-    </div>
-  </body>
+        <img id='photo' src="./images/photo.jpg" />
+        <h1>Zhixuan Yang</h1>
+        <p id='welcome'> Welcome to my Google SPS Portfolio! </p>
+        <!img id='fireworks' src='./images/fireworks.png' />
+        <p id='contact'> 
+            <a id='github' href='https://github.com/yyzx117/software-product-sprint.git' style="text-decoration: none"> 
+                <img id='github' src='./images/GitHub.png'/>
+            <a/>
+            <a id='linkedin' href='https://www.linkedin.com/in/zhixuan-yang-7a02b61b9/' style="text-decoration: none">
+                <img id='linkedin' src='./images/LinkedIn.png'/>
+            </a>
+            <a id='email' href = "mailto: yangzhixuan18@gmail.com" style="text-decoration: none">
+                <img id='email' src='./images/email.jpg'/>
+            </a>
+        </p>
+
+        <div class='intro'>
+            <p id='intro'> Hi! My name is Zhixuan Yang and I am a junior at Georgia Tech 
+                <a href='https://www.gatech.edu/' style="text-decoration: none"><img id='buzz' src='./images/buzz.png'/> </a> majoring in Computer Science and minoring in Psychology.
+            Full of passion for tech and life, I aim at becoming a brilliant software engineer who could
+            design technical products that help people lead better lives! <p/>
+        </div>
+
+        <div class='hobby'> 
+            <!img id='label1' src='./images/label1.jpg' />
+            <p id='para1'> Life and hobbies</p>
+            <p id='para11'> Volleyball</p>
+            <p id='para12'> Food </p>
+            <p id='para13'> Singing </p>
+            <p id='para14'> ... </p>
+
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img class='image'src="./images/volley2.jpg" style="width:100%">
+                    <div class="numbertext">1 / 4</div>
+                    <div class="text">Volleyball Fellowship</div>
+                </div>
+                <div class="mySlides fade">
+                    <img class='image'src="./images/volley1.jpg" style="width:100%">
+                    <div class="numbertext">2 / 4</div>
+                    <div class="text">Volleyball Club 2020</div>
+                </div>
+                <div class="mySlides fade">
+                    <img class='image'src="./images/food1.jpg" style="width:100%">
+                    <div class="numbertext">3 / 4</div>
+                    <div class="text">Pork Ribs</div>
+                </div>
+                <div class="mySlides fade">
+                    <img class='image'src="./images/food2.jpg" style="width:100%">
+                    <div class="numbertext">4 / 4</div>
+                    <div class="text">Meat Sause Noodle</div>
+                </div>
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <!-- The dots/circles -->
+            <div class='dots' style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+
+
+
+            <p id='random'>Learn about my favourite Singers by clicking the button below:</p>
+            <button id='button' onclick="addRandomGreeting()"> Click me </button>
+            <div id="greeting-container"></div>
+            <!div class="slidecontainer">
+            <!input type="range" min="0" max="4" value="0" class="slider" id="myRange">
+            <!/div>
+            <!p id='demo'></p>
+        </div> 
+      
+
+        <div class='project'>
+            <!img id='label2' src='./images/label2.jpg' />
+            <p id='para2'> Project and Experience</p>
+            <p id='para21'>
+                1. 
+                <a id='project1' href='https://sites.google.com/site/anqiwuresearch/group-members'> BRAINML Lab </a>:  
+            </p>
+            <p id='lab'>
+                Topic in GPFA.
+            </p>
+            <p id='para22'>2. Neusoft Intern: </p>
+            <p id='neusoft'>
+                Learned how to build Docker environment and helped the team set up virtual 
+                environment under Docker. Helped the team transmit SQL databases. 
+                Modified the codes of the project and tested them in the Docker environment I have built.            
+            </p>
+            <p id='para23'>2. Unihack 21': </p>   
+            <p id='unihack'>
+                Developed a COVID-19 isolation communication platform (website) as a group of 4
+                to help connect isolators with isolators, isolators with the staff. 
+                Designed front-end pages with HTML, including home, login, profile page, etc,
+                and the logo for our artifact with PhotoShop.
+            </p>      
+        </div>
+
+        <div class='contactme'>
+            <p id='para3'> Contact Me</p>
+            <form action="/form-handler" id='post' method="POST">
+                <div id='title'>
+                    <p>Enter your contact information here:</p>
+                    <textarea name="text-input">Welcome!</textarea>
+                    <br/>
+            
+                    <p>Choose one from the two options:</p>
+                    <label>
+                        <input type="checkbox" name="phone" value="true">
+                        Phone Number
+                    </label>
+                    <br/>
+                    <label>
+                        <input type="checkbox" name="email" value="true">
+                        Email Address
+                    </label>
+                    <br/><br/>
+                    <input id = 'submit' type="submit" />
+                </div>
+            </form>
+            <div id='data'>
+                <p>Click this button to see the server's current date.</p>
+                <button   id='dataButton' onclick="workTogether();">
+                    Get current date
+                </button>
+                <p id="getDate"></p>
+            </div>
+            <p id='server'>Click <a id='here'href="/hello">here</a> to see content created by server code.</p>
+            <p id='city'>Click <a id='here' href="/server-stats">here</a> to see all the cities I have been to in USA.</p>
+            <p id='random2'>Click this button to see the random city I have been to in USA.</p>
+            <button id='showCity' onclick="getServerStats()">Explore cities</button>
+            <ul id="server-stats-container"></ul>            
+        </div>
+      
+
+</div>
+    
+
+</body>   
 </html>
