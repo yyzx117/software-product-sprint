@@ -145,6 +145,28 @@
             <button id='showCity' onclick="getServerStats()">Explore cities</button>
             <ul id="server-stats-container"></ul>            
         </div>
+
+        <div class='translate'>
+            <p id='para4'> Learn my language</p>
+            <p id='introLanguage'>
+                Want to learn more about me? Try learning some volcabulary in my language - Chinese!
+                You could type whatever you want to learn in the textbox below and see how it looks
+                like in Chinese. You could also choose other languages in the list. Enjoy!
+            </p>
+            <textarea id="text1"></textarea>
+            <!textarea id="text2"></textarea>
+            <img id='arrow' src="images/arrow.jpg"/>            
+            <select id="language">
+                <option value="zh">Chinese</option>
+                <option value="ko">Korean</option>
+                <option value="ja">Japanese</option>
+                <option value="es">Spanish</option>
+                <option value="it">Italian</option>
+                <option value="ar">Arabic</option>
+            </select>
+            <button id='translate'onclick="requestTranslation();">Translate</button>
+            <div id="result"></div>
+        </div>
       
 
 </div>

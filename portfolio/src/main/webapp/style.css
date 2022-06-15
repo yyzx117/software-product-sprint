@@ -8,7 +8,7 @@ body {
   margin-right: auto;
   width: 650px;
   background: white;
-  height: 2000px;
+  height: 2200px;
 }
 
 /*design for greeting section*/
@@ -392,4 +392,76 @@ h1 {
     position:absolute;
     top:485px;
     left:120px;
+}
+
+
+/*design for language paragraph*/
+.translate {
+    position:relative;
+    top: 190px;
+    height: 350px;
+    border-style: solid;
+    border-width: thin;
+    border-color: #173e8c;
+}
+#para4 {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+#introLanguage {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 15px;
+    color: #602813;
+    margin-right: 50px;;
+}
+#text1 {
+    width: 240px;
+    height: 100px;
+    position:absolute;
+    top: 140px;
+    left:25px;
+    background-color: #FAF0E6;
+}
+#text2 {
+    width: 240px;
+    height: 100px;
+    position:absolute;
+    top: 140px;
+    left:350px;
+    background-color: #FAF0E6;
+}
+#arrow {
+    position:absolute;
+    top: 180px;
+    left:285px;
+    width:50px;
+    height: 30px;
+}
+#language {
+    position:absolute;
+    top: 260px;
+    left:25px;
+}
+#translate {
+    position:absolute;
+    top: 290px;
+    left:25px;
+    background-color: #FAF0E6;
+    border-color: #FF7F50;
+    border-width: 2px;
+}
+#result {
+    position:absolute;
+    top: 140px;
+    left:375px;
+    border-width: thin;
+    border-style: solid;
+    width: 250px;
+    height: 105px;
+    background-color: #FAF0E6;
 }
