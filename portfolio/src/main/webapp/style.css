@@ -318,7 +318,7 @@ h1 {
     border-style: solid;
     border-width: thin;
     border-color: #173e8c;
-    height: 520px;
+    height: 540px;
 
 }
 #para3 {
@@ -364,7 +364,7 @@ h1 {
 }
 #server {
     position: absolute;
-    top: 380px; 
+    top: 400px; 
     font-size: 18px;  
     left:50px; 
 }
@@ -373,23 +373,23 @@ h1 {
 }
 #city {
     position:absolute;
-    top:410px;
+    top:430px;
     left:50px;
     font-size:18px;
 }
 #random2 {
     position:absolute;
-    top:440px;
+    top:450px;
     left:50px;
     font-size:18px;
 }
 #showCity {
     position:absolute;
-    top:480px;
+    top:500px;
     left:50px;
 }
 #server-stats-container {
     position:absolute;
-    top:465px;
+    top:485px;
     left:120px;
 }
